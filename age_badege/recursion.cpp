@@ -191,7 +191,15 @@
 #include<iostream>
 using namespace std;
 
+void print(int arr[],int s, int e){
+    for(int i=s;i<=e;i++){
+        cout<<arr[i]<<" "<<endl;
+    } cout<<endl;
+}
+
 bool binary(int arr[], int s, int e, int k){
+    cout << endl;
+    print(arr,s,e);
     //base case
     if(s>e){
         return false;
